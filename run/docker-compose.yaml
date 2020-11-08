@@ -16,8 +16,8 @@ services:
   wasa-webapp:
     container_name: wasa-webapp
     build:
-      context: .
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: ./Dockerfile
     ports:
       - "8080:80"
     depends_on:

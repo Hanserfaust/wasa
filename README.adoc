@@ -7,12 +7,13 @@ advanced board games, such as classical chit-based war games, to be enjoyed on t
 touch-interface gaming could work. It is a work in process.
 
 == Run
-=== Test or Deployment on server
+=== Docker-Compose
 Wasa is packaged as a Docker image based on nginx, and can be built and run using docker-compose
 since it uses Webdis (which uses Redis), as simple as this:
 
 First build the Wasa image
 
+    $ cd run
     $ docker-compose build
 
 And run the whole stack like this:
