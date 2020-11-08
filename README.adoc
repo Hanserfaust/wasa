@@ -36,7 +36,10 @@ http://localhost:8080/
 
 To verify everything, I suggest you open up the Wasa application and start a new game and load up a
 scenario. If the webdis backend is working correctly, you should be able to se the events propagating
-to a second browser! Simply copy the link from the first browser and open up a second.
+to a second browser!
+
+imply copy the link from the first browser and open up a second. This is how your opponent would
+connect to your game.
 
 == Developer
 If you are a developer, I would instead suggest open up ./webapp/index.html from the git-repository
@@ -66,7 +69,7 @@ TODO
 === Secondary goals
 * Designed with touch devices (smartphones, ipads)  in mind.
 
-image:/img/doc/wasa_france40.jpg[France 40]
+image:/doc/img/wasa_france40.jpg[France 40]
 _GMT Games France 40, by Mark Simonitch, based on the Vassal Module._
 
 == Limitations
@@ -416,7 +419,7 @@ I now add a the new entry below somewhere close to France 40:
 
 I should be able to use the new module by surfing to the lobby, seeing the game box appear:
 
-image:/img/doc/new_game_added.png[Holland 44]
+image:/doc/img/new_game_added.png[Holland 44]
 
 
 ==== Testing and debugging.
