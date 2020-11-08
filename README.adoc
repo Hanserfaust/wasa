@@ -6,7 +6,52 @@ advanced board games, such as classical chit-based war games, to be enjoyed on t
 *Disclaimer!* Wasa is not a fully working board game solution. It is a project made to explore how real time web-based
 touch-interface gaming could work. It is a work in process.
 
-== Goals
+== Test or Deployment on server
+Wasa is packaged as a Docker image based on nginx, and can be built and run using docker-compose
+since it uses Webdis (which uses Redis), as simple as this:
+
+First build the Wasa image
+
+    $ docker-compose build
+
+And run the whole stack like this:
+
+    $ docker-compose up
+
+Two things happens here:
+
+1. The webdis server is started and exposed on port 7373
+2. An Nginx server is exposing the webapp on port 8080
+
+Like so:
+
+    $ docker ps
+    CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
+    53e69d3c00aa        wasa_wasa-webapp    "/docker-entrypoint.…"   8 minutes ago       Up 8 minutes        0.0.0.0:8080->80/tcp     wasa-webapp
+    4f1720ba96db        nicolas/webdis      "/bin/sh -c '/usr/bi…"   8 minutes ago       Up 8 minutes        0.0.0.0:7379->7379/tcp   wasa-webdis
+
+So, to acces the embedded instance of the application, surf to:
+
+http://localhost:8080/
+
+To verify everything, I suggest you open up the Wasa application and start a new game and load up a
+scenario. If the webdis backend is working correctly, you should be able to se the events propagating
+to a second browser! Simply copy the link from the first browser and open up a second.
+
+== Developer
+If you are a developer, I would instead suggest open up ./webapp/index.html from the git-repository
+using your development environment (like pycharm etc.) and serve it from there.
+
+It still connects to the webdis instance on port 7373 running inside the wasa-webdis docker instance
+you started above.
+
+But from the dev-env you can make instant changes to the code (reload page) and test. Surfing to
+localhost:8080 will only load the application version that was built into the docker image.
+
+== Production
+TODO
+
+== Design / Goals
 
 === Primary goals
 * Online multiplayer games.
@@ -71,7 +116,9 @@ TODO: Add figure showing how stuff fits together.
 
 Application fundamentals:
 
-1. application/index.html is loaded by the browser.
+1. webapp/index.html is the entrance, a static html page not loading an javascript. Just information and links etc.
+
+1. application/index.html is the actual application. This loads the javascript into the browser.
 
 1. from the document.ready() function nunjucks.js is configured and then createWasaBoardGame() is executed.
 

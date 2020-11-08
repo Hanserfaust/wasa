@@ -48,11 +48,15 @@
 
     <script type="application/javascript">
 
+        // '88.99.168.32' or localhost etc..
+        var webdis_hostname = 'localhost';
+        var webdis_port = '7379';
+
         $(document).ready( function() {
 
             nunjucks.configure('templates', {autoescape: true});
 
-            createWasaBoardGame('88.99.168.32', '7379');
+            createWasaBoardGame(webdis_hostname, webdis_port);
         });
 
     </script>
