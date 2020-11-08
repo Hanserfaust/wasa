@@ -6,7 +6,8 @@ advanced board games, such as classical chit-based war games, to be enjoyed on t
 *Disclaimer!* Wasa is not a fully working board game solution. It is a project made to explore how real time web-based
 touch-interface gaming could work. It is a work in process.
 
-== Test or Deployment on server
+== Run
+=== Test or Deployment on server
 Wasa is packaged as a Docker image based on nginx, and can be built and run using docker-compose
 since it uses Webdis (which uses Redis), as simple as this:
 
@@ -41,7 +42,7 @@ to a second browser!
 imply copy the link from the first browser and open up a second. This is how your opponent would
 connect to your game.
 
-== Developer
+=== Developer
 If you are a developer, I would instead suggest open up ./webapp/index.html from the git-repository
 using your development environment (like pycharm etc.) and serve it from there.
 
@@ -51,8 +52,10 @@ you started above.
 But from the dev-env you can make instant changes to the code (reload page) and test. Surfing to
 localhost:8080 will only load the application version that was built into the docker image.
 
-== Production
-TODO
+=== Production / Internet
+See the comment in docker-compose.yaml on the approach to use. Not safe, but it could work for a
+short test session etc.
+
 
 == Design / Goals
 
@@ -72,14 +75,14 @@ TODO
 image:/doc/img/wasa_france40.jpg[France 40]
 _GMT Games France 40, by Mark Simonitch, based on the Vassal Module._
 
-== Limitations
+=== Limitations
 
 Wasa aims to implement games with the following characteristics at this time:
 
 * Complex wargames (ie. tries to handle stacks of components, component flipping, rotation etc).
 * No hidden informations right now (ie no decks of cards, no bags with chits, no hidden tokens, no block games)
 
-== Features
+=== Features
 All features are implemented with touch support first in mind (must work great on both PCs and iPads etc.).
 
 
@@ -112,7 +115,7 @@ Below is just a take-out of what works:
 * Turn concept (ie. lock board of others while acting in your turn).
 * Offline mode (stack events locally until connection is made).
 
-== Technical
+== Tecknical
 
 === Overview
 TODO: Add figure showing how stuff fits together.
@@ -140,9 +143,15 @@ without resetting all games (or possible converting existing games to the new sc
 * "Standard" Bootstrap / Jquery(UI) solution
 * Websocket event notification for instant and no page refresh experience.
 
+
 === Back-end
 
-Very simple at this point. Based on Redis for event storage and notification.
+Backend is currently based on Webdis (which is based on Redis).
+
+https://github.com/nicolasff/webdis
+
+But should ideally instead be on authorized REST API calls in the future.
+
 
 == HOWTO
 

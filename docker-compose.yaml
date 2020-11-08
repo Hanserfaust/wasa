@@ -4,6 +4,12 @@ services:
   wasa-webdis:
     container_name: wasa-webdis
     image: nicolas/webdis
+    #
+    # NOTE: If exposed to internet(s), be careful!
+    #   you must also set the variable 'webdis_hostname'
+    #   in the file ./webapp/application/index.html (webdis_hostname)
+    #   so it points to the public IP / Hostname of the server that exposes this port
+    #
     ports:
       - "7379:7379"
 
