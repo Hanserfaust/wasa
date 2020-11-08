@@ -1,0 +1,135 @@
+
+    <div class="panel panel-default wasa_panel global_stackable" id="player_panel">
+
+        <div class="panel-heading">
+            <h4>Player panel [Session: {{game_session_id}}]</h4>
+            <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+
+        </div>
+        <div class="panel-body">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#pp_events_tab" aria-controls="events" role="tab" data-toggle="tab">Events</a></li>
+            <li role="presentation"><a href="#pp_component_tray_tab" aria-controls="component_tray" role="tab" data-toggle="tab">Component tray</a></li>
+            <li role="presentation"><a href="#pp_scenario_tab" aria-controls="game_tab" role="tab" data-toggle="tab">Scenario</a></li>
+            <li role="presentation"><a href="#pp_session_tab" aria-controls="game_tab" role="tab" data-toggle="tab">Session</a></li>
+            <li role="presentation"><a href="#pp_about_tab" aria-controls="game_tab" role="tab" data-toggle="tab">About</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active pp_tab_pane" id="pp_events_tab">
+                <textarea id="events_textarea" class="form-control"></textarea>
+
+                <button type="button" class="btn btn-default" onclick="roll_NDS(1,6)">Roll D6</button>
+                <button type="button" class="btn btn-default" onclick="roll_NDS(2,6)">Roll 2D6</button>
+                <button type="button" class="btn btn-default" onclick="roll_NDS(5,6)">Roll 5D6</button>
+                <button type="button" class="btn btn-default" onclick="roll_NDS(1,10)">Roll D10</button>
+                <button type="button" class="btn btn-default" onclick="roll_NDS(1,20)">Roll D20</button>
+
+                <input id="event_input" class="form-control" placeholder="Chat, comments, clarifications etc.">
+
+            </div>
+
+            <div role="tabpanel" class="tab-pane pp_tab_pane" id="pp_component_tray_tab">
+                <div class="row">
+                    <input class="form-control" onkeyup="filter_components(this)" id="filter_input" placeholder="Filter component by ID">
+                    <button class="btn btn-default" data-toggle="button" onclick="$('#main_tray').find('.flipper').toggleClass('flipped');">Flip all</button>
+                </div>
+                <br>
+                <div class="panel-body component_tray resizable_scroller" id="main_tray">
+                </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane pp_tab_pane" id="pp_scenario_tab">
+                {% if game.scenarios %}
+                <p>Use the menu below to load a scenario setup. NOTE: After confirming the scenario selection, the current game session will be reset and set up using the scenario data.</p>
+                <select class="form-control" onchange="loadScenario(this.value)">
+                    <option>-- Select scenario --</option>
+                    {% for scenario in game.scenarios %}
+                    <option value="{{scenario.id}}">{{ scenario.title }}</option>
+                    {% endfor %}
+                </select>
+                {% else %}
+                <br>
+                <div class="alert alert-info">There are no scenarios defined for this game yet.</div>
+                {% endif %}
+                <hr>
+                <p>You can contribute to the scenario definitions like this, it is simple but also a bit time consuming, just like wargaming should be:</p>
+                <ol>
+                    <li>Start a new blank game.</li>
+                    <li>Place the counters according to a scenario description from the rule book.</li>
+                    <li>Double check that your work was complete and accurate. It is easy to make small but fatal errors.</li>
+                    <li>In the chat window, typ <strong>/dump</strong>.</li>
+                    <li>Click 'Select all' and copy the selection to the clip-board.</li>
+                    <li>Create an email and describe what scenario and what game you have created it for.</li>
+                    <li>Send the contents (as a plain-text, ie. no formatting) email to <a href="mailto:herr.eklund@gmail.com?subject=Wasa scenario">the Wasa Author</a>.</li>
+                </ol>
+                <p>Some tips and tricks when creating scenarios:</p>
+                <ul>
+                    <li>Scenario creation are easiest made using a PC with mouse.</li>
+                    <li>Hover over a component in the tray to see the ID used for it. They are based on the filename of the source module (ie. Vassal).</li>
+                    <li>Apply a filter using a part of the ID, such as "ger", "soviet", "lee", "div" for example.</li>
+                </ul>
+                <p>A note on how to make fixes to a scenario that was previously defined:</p>
+                <ol>
+                    <li>Write a chat message saying FIXES BELOW and send it.</li>
+                    <li>Make your adjustments and follow the instructions above from 2) similar to when creating a new scenario.</li>
+                </ol>
+            </div>
+
+            <div role="tabpanel" class="tab-pane pp_tab_pane" id="pp_session_tab">
+                <br>
+                {% if game_session_id %}
+                <p>The link in your browser window represent this game. You could share it with your opponents, but they will not be able to list it in this box.</p>
+
+                <br><br>
+                <button class="btn btn-danger pull-right" onclick="wasa_client.reset_current_game()" >Reset current game</button>
+                <br><br>
+                {% else %}
+                <div class="alert alert-info">
+                    No session selected, either continue with an ongoing game, or create a new one.
+                </div>
+                {% endif %}
+
+                <h5>You have access to the following games: </h5>
+
+                <table class="table">
+                    <tr>
+                        <th>Session Link</th>
+                        <th>Comment</th>
+                    </tr>
+                    {% for session in available_sessions %}
+                    <tr>
+                        <td><a class="btn btn-sm btn-primary" href="?game_session_id={{ session.game_session_id }}&game_id={{ game_id }}">{{ session.game_session_id }}</a></td>
+                        <td>{{ session.comment }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <a disabled="disabled" class="btn btn-success pull-right" href="?game_id={{ game_id }}&game_session_id={{ new_session_id }}">New session</a>
+                <br>
+
+            </div>
+            <div role="tabpanel" class="tab-pane pp_tab_pane" id="pp_about_tab">
+                <br>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                  <strong>Note:</strong>
+                    <p>Game is still in <strong>alpha stage</strong> development and any game my be erased or appear buggy at times.</p>
+                </div>
+
+                <div class="alert alert-info alert-dismissible" role="alert">
+                  <strong>Tips</strong>
+                    <ul>
+                        <li>Use your browser zoom-tools! (Ctrl or ALT + plus/minus).</li>
+                        <li>If on a touch-screen, Pan and Pinch zoom.</li>
+                        <li>Drag components from the tray to the map.</li>
+                        <li>Click to inspect a stack of components.</li>
+                        <li>Click anywhere to dismiss stack inspection.</li>
+                        <li>While inspecting, you can drag a component as from the component location.</li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>

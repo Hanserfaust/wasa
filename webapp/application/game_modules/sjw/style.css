@@ -1,0 +1,38 @@
+
+#main_title {
+    color: white;
+}
+
+.theme_color {
+    color: white;
+}
+
+#tab_side {
+    /* Relative or fixed (fixed is only good for small maps)*/
+    position: relative;
+}
+#main_map {
+    background-image: url('components/sjw_NS.jpg');
+    width: 3336px;
+    height: 3761px;
+}
+
+.sjw_counter {
+    /* Custom for this game, its OK to change width height from counter image size */
+    background-repeat: no-repeat;
+    width: 41px;
+    height: 41px;
+
+    background-size: 100%;
+    border: 0;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #111;
+
+}
+
+/* Overide default since SJW counters are small*/
+.marked_component {
+    border: solid 2px;
+}

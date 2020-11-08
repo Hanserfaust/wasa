@@ -1,0 +1,32 @@
+
+#main_title {
+}
+
+.theme_color {
+    color: orange;
+}
+
+#tab_side {
+    position: fixed;
+}
+
+#map1_west {
+    background-image: url('components/maps/map1_west.jpg');
+    width: 1304px;
+    height: 960px;
+}
+
+.sl_counter_small {
+    /* Custom for this game */
+    background-repeat: no-repeat;
+    width: 56px;
+    height: 56px;
+
+    background-size: 100%;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #111;
+}
+

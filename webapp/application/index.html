@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wasa</title>
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script src="../frameworks/jquery/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="../frameworks/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="../frameworks/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../frameworks/bootstrap/css/bootswatch-slate/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+    <!-- WASA -->
+    <script src="../js/gui_extras.js"></script>
+    <script src="../js/wasa_back.js?version=1"></script>
+    <script src="../js/wasa_front.js?verion=1"></script>
+    <script src="../js/wasa_main.js?version=1"></script>
+
+    <!-- Module registry -->
+    <script src="game_modules/registered_modules.js?version=2"></script>
+
+    <link rel="stylesheet" href="../css/gui_extras.css">
+    <link rel="stylesheet" href="../css/wasa.css">
+    <link rel="stylesheet" href="../css/card.css">
+
+    <!-- Cookies -->
+    <script src="../js/lib/js.cookie.js"></script>
+
+    <!-- Template rendering -->
+    <script src="../js/lib/nunjucks.min.js"></script>
+    <script src="../js/lib/URI.js"></script>
+
+    <!-- Utility stuff -->
+    <script src="../js/lib/fnv1a.js"></script>
+    <!--script src="../js/lib/long-press.min.js"></script-->
+
+</head>
+
+<body class="container-fluid" id="main_body" oncontextmenu="return false">
+
+    <script type="application/javascript">
+
+        $(document).ready( function() {
+
+            nunjucks.configure('templates', {autoescape: true});
+
+            createWasaBoardGame('88.99.168.32', '7379');
+        });
+
+    </script>
+
+    <div id="nunjucks_contents">
+        <!-- Content is added here by nunjucks.js -->
+    </div>
+
+</body>
+</html>

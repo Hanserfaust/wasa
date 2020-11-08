@@ -1,0 +1,59 @@
+
+#main_title {
+}
+
+.theme_color {
+    color: #b23426;
+}
+
+#tab_side {
+    /* Most of the times, keep it to relative (large maps). Some small maps could use fixed though */
+    position: relative;
+}
+#main_game_board {
+    background-image: url('components/vassal/USE Map-WEST&EAST.jpg');
+    width: 6550px;
+    height: 5100px;
+}
+#faction_pools {
+    background-image: url('components/vassal/FactionPools.jpg');
+    width: 1209px;
+    height: 934px;
+}
+#western_faction_card {
+    background-image: url('components/vassal/WesternFactionCard.jpg');
+    width: 1209px;
+    height: 934px;
+}
+#axis_faction_card {
+    background-image: url('components/vassal/AxisFactionCard.jpg');
+    width: 1208px;
+    height: 933px;
+}
+
+#soviet_faction_card {
+    background-image: url('components/vassal/SovietFactionCard.jpg');
+    width: 1209px;
+    height: 934px;
+}
+#national_tracks {
+    background-image: url('components/vassal/NationalTracks.jpg');
+    width: 934px;
+    height: 1209px;
+}
+
+.uc_counter_small {
+    /* Custom for this game */
+    background-repeat: no-repeat;
+    width: 65px;
+    height: 65px;
+
+    background-size: 100%;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #111;
+
+}
+

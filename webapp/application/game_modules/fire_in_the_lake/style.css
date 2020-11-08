@@ -1,0 +1,39 @@
+
+#main_title {
+}
+
+.theme_color {
+    color: orange;
+}
+
+#tab_side {
+    /* Most of the times, keep it to relative (large maps). Some small maps could use fixed though */
+    position: relative;
+}
+#game_board {
+    background-image: url('components/vassal/FITL Map VASSAL.jpg');
+    width: 3277px;
+    height: 5065px;
+}
+
+.fitl_marker {
+    /* Custom for this game */
+    background-repeat: no-repeat;
+    width: 110px;
+    height: 110px;
+
+    background-size: contain;
+    border: 0;
+
+}
+
+.fitl_card {
+    /* Custom for this game */
+    background-repeat: no-repeat;
+    width: 246px;
+    height: 344px;
+
+    background-size: contain;
+    border: 0;
+}
+

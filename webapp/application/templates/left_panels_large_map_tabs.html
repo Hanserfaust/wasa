@@ -1,0 +1,102 @@
+{% include "game_session_modal.html" %}
+
+{% include "events_dump_modal.html" %}
+
+<!--
+This file is generated using Nunjucks:
+    https://mozilla.github.io/nunjucks/templating.html
+-->
+<div class="row" style="margin-top:10px;">
+
+    <div>
+        <h2 id="main_title" class="theme_color"><a href="."><<<</a> {{ game.title }} <small>{{ game.version }}</small></h2>
+        <p class="lead">{{ game.subtitle }}</p>
+    </div>
+
+    {% include "player_panel.html" %}
+
+    {% include "toolbox.html" %}
+
+    {% if game.cards %}
+        {% include "_cards_panel.html" %}
+    {% endif %}
+
+    <div id="main_tabs">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+              {% for tab in game.game_board_tabs %}
+                  <li role="presentation" {% if loop.first %} class="active" {% endif %}>
+                      <a href="#{{ tab.id }}_game_board_tab" role="tab" data-toggle="tab" class="map_tab_title theme_color">> {{ tab.title }}</a>
+                  </li>
+              {% endfor %}
+
+              {% for tab in game.extra_tabs %}
+                  <li role="presentation">
+                      <a href="#{{ tab.id }}_extra_tab" role="tab" data-toggle="tab" class="extra_tab_title">{{ tab.title }}</a>
+                  </li>
+              {% endfor %}
+
+              {% if game.rules_tab %}
+              <li role="presentation">
+                  <a href="#{{ game.rules_tab.id }}_rules_tab" aria-controls="tab_rules" role="tab" data-toggle="tab" class="rules_tab_title">Rules</a>
+              </li>
+              {% endif %}
+          </ul>
+
+
+            <div class="game_table custom_game_table" id="game_table">
+                <!-- Tab panes -->
+                <div class="tab-content" id="all_tabs">
+                    {% for tab in game.game_board_tabs %}
+                    <div role="tabpanel" class="tab-pane {% if loop.first %}active{% endif %}" id="{{ tab.id }}_game_board_tab">
+
+                        <div class="game_board_wrapper">
+                            <div id="{{tab.id}}" class="ui-widget-header game_board {{ tab.classes }}">
+                                <!-- TODO: -->
+                                <div class="lineup_box">
+                                    <!-- disabled for now
+                                    <input id="lineup_box_input" class="form-control input-sm" type="text" placeholder="Labels, remark etc" onchange="">
+                                    -->
+                                    <div class="cbox_holder">
+                                        <div class="cbox cb_unmark"></div>
+                                        <div class="cbox cb_mark cb_red"></div>
+                                        <div class="cbox cb_mark cb_green"></div>
+                                        <div class="cbox cb_mark cb_blue"></div>
+                                        <div class="cbox cb_mark cb_yellow"></div>
+                                        <div class="cbox cb_mark cb_pink"></div>
+                                        <div class="cbox cb_mark cb_cyan"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    {% for tab in game.extra_tabs %}
+                    <div role="tabpanel" class="tab-pane extra_tab" id="{{ tab.id }}_extra_tab">
+                        <img src="{{ module_path }}/{{ tab.image_src }}" style="{{ tab.image_style }}">
+                    </div>
+                    {% endfor %}
+
+                    {% if game.rules_tab %}
+                    <div role="tabpanel" class="tab-pane rules_tab" id="{{ game.rules_tab.id }}_rules_tab">
+                        <br>
+                        <p>We recommend to open the rules in a separate <strong>browser tab</strong> for best performance, just click the button below!</p>
+                        <br>
+                        <a href="{{ game.rules_tab.link_src }}" target="_blank" class="btn btn-default">{{ game.rules_tab.link_title }}</a>
+                        <br>
+                        {% if game.rules_tab.links %}
+                        <h3>Links</h3>
+                        {% for link in game.rules_tab.links %}
+                        <a href="{{ module_path }}/{{ link.src }}" target="_blank" class="">{{ link.title }}</a>
+                        {% endfor %}
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+
+            </div>
+
+    </div>
+
