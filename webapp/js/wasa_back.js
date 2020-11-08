@@ -18,6 +18,7 @@ var WasaClient = function (hostname, port, game_session_id, username, game_event
 
     that.game_session_id = game_session_id;
     that.username = username;
+
     that.http_url = 'http://'+hostname+':'+port;
     that.ws_url = 'ws://'+hostname+':'+port;
 
