@@ -5,7 +5,7 @@ services:
     container_name: wasa-webdis
     image: nicolas/webdis
     ports:
-      - "7379:7379"
+      - "7379:80"
 
   wasa-webapp:
     container_name: wasa-webapp
