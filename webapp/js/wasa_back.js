@@ -16,7 +16,9 @@ var WasaClient = function (webdis_hostname, port, game_session_id, username, gam
 
     var that = this;
 
-    var protocol = window.location.protocol;
+    // Not sure, webids only supports http
+    // var protocol = window.location.protocol;
+    var protocol = 'http';
 
     that.game_session_id = game_session_id;
     that.username = username;
@@ -248,7 +250,7 @@ var WasaClient = function (webdis_hostname, port, game_session_id, username, gam
 
     function store_event_to_list(json_event, notify) {
         // 1) Store to backend
-        //wasaSocket.send(JSON.stringify(["LPUSH", that.wasa_event_list_name, json_event]));
+        // wasaSocket.send(JSON.stringify(["LPUSH", that.wasa_event_list_name, json_event]));
 
         console.log("Storing to list "+wasa_event_list_name);
         async_get_jsonp('/RPUSH/'+wasa_event_list_name+'/'+json_event, function (data) {
