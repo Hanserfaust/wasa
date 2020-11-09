@@ -6,6 +6,9 @@ advanced board games, such as classical chit-based war games, to be enjoyed on t
 *Disclaimer!* Wasa is not a fully working board game solution. It is a project made to explore how real time web-based
 touch-interface gaming could work. It is a work in process.
 
+== Demo
+Latest build should be deployed to https://wasa.bitknife.se/
+
 == Run
 === Docker-Compose
 Wasa is packaged as a Docker image based on nginx, and can be built and run using docker-compose
