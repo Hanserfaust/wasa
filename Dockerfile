@@ -9,7 +9,7 @@ FROM nginx:alpine as build
 COPY webapp /usr/share/nginx/html
 
 # Copy a slightly modified default.conf
-COPY default.conf /etc/nginx/conf.d
+COPY nginx_default.conf /etc/nginx/conf.d/default.conf
 
 #
 # Copy env-substiution script for the config.js
