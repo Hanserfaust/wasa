@@ -7,6 +7,7 @@ FROM nginx:alpine as build
 # Copy all static content to root
 #
 COPY webapp /usr/share/nginx/html
+COPY favicon.ico /usr/share/nginx/html/
 
 # Copy a slightly modified default.conf
 COPY nginx_default.conf /etc/nginx/conf.d/default.conf
