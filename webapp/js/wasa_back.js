@@ -18,7 +18,7 @@ var WasaClient = function (webdis_hostname, port, game_session_id, username, gam
 
     // Not sure, webids only supports http
     // var protocol = window.location.protocol;
-    var protocol = 'http';
+    var protocol = 'http:';
 
     that.game_session_id = game_session_id;
     that.username = username;
