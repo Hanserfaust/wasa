@@ -6,7 +6,7 @@
  *  https://github.com/nicolasff/webdis
  *
  */
-var WasaClient = function (hostname, port, game_session_id, username, game_event_notification_handler, game_event_handler) {
+var WasaClient = function (webdis_hostname, port, game_session_id, username, game_event_notification_handler, game_event_handler) {
     if (typeof jQuery === 'undefined') {
         throw new Error('Wasa requires jQuery')
     }
@@ -21,8 +21,7 @@ var WasaClient = function (hostname, port, game_session_id, username, game_event
     that.game_session_id = game_session_id;
     that.username = username;
 
-    that.http_url =  protocol+'//'+hostname+':'+port;
-    that.ws_url = 'ws://'+hostname+':'+port;
+    that.http_url =  protocol+'//'+webdis_hostname+':'+port;
 
     var wasa_event_channel_name = game_session_id+'_event_channel';
     var wasa_event_list_name = game_session_id+'_event_list';
@@ -30,14 +29,15 @@ var WasaClient = function (hostname, port, game_session_id, username, game_event
     subscribe(wasa_event_channel_name, game_event_notification_handler);
 
     /*
-    var wasaSocket = new WebSocket(this.ws_url+"/");
+        that.ws_url = 'ws://'+hostname+':'+port;
+        var wasaSocket = new WebSocket(this.ws_url+"/");
 
-    wasaSocket.onopen = function() {
-        console.log("JSON socket connected!");
-    };
-    wasaSocket.onmessage = function(messageEvent) {
-        console.log("JSON received:", messageEvent.data);
-    };
+        wasaSocket.onopen = function() {
+            console.log("JSON socket connected!");
+        };
+        wasaSocket.onmessage = function(messageEvent) {
+            console.log("JSON received:", messageEvent.data);
+        };
     */
 
     $.ajaxSetup({

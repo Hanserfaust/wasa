@@ -14,5 +14,8 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - "8080:80"
+    environment:
+      WASA_API_HOSTNAME: wasa-api.ghs.bitknife.se
+      WASA_API_PORT: 80
     depends_on:
       - wasa-webdis
