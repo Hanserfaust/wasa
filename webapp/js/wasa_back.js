@@ -18,12 +18,16 @@ var WasaClient = function (webdis_hostname, port, game_session_id, username, gam
 
     // Not sure, webids only supports http
     var protocol = window.location.protocol;
-    // var protocol = 'http:';
 
     that.game_session_id = game_session_id;
     that.username = username;
 
-    that.http_url =  protocol+'//'+webdis_hostname+':'+port;
+    if (protocol == 'https:') {
+        // Dont use the port option for the url if on HTTPS
+        that.http_url =  protocol+'//'+webdis_hostname;
+    } else {
+        that.http_url =  protocol+'//'+webdis_hostname+':'+port;
+    }
 
     var wasa_event_channel_name = game_session_id+'_event_channel';
     var wasa_event_list_name = game_session_id+'_event_list';
