@@ -82,7 +82,11 @@
             <div role="tabpanel" class="tab-pane pp_tab_pane" id="pp_session_tab">
                 <br>
                 {% if game_session_id %}
-                <p>The link in your browser window represent this game. You could share it with your opponents, but they will not be able to list it in this box.</p>
+                <p>The link in your browser window represent this game. You could share it with your opponents,
+                    but they will not be able to list it in this box.</p>
+
+                <p>You can also use the QR code below to navigate to this game</p>
+                <canvas id="session_qr_code"></canvas>
 
                 <br><br>
                 <button class="btn btn-danger pull-right" onclick="wasa_client.reset_current_game()" >Reset current game</button>

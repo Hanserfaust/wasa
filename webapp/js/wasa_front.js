@@ -15,6 +15,12 @@ function initWasaFront() {
     console.log('##');
     console.log('##');
 
+    // Draw the QR code
+    var qr = window.qr = new QRious({
+        element: document.getElementById('session_qr_code'),
+        size: 200,
+        value: window.location.href
+    });
 
     document.getElementById('event_input').onkeypress = function (e) {
         if (!e) e = window.event;
