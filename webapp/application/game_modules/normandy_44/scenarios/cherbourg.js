@@ -1,11 +1,12 @@
 /* Events from game_id = normandy_44 */
 var scenario_setup =
 /* Events from game_id = normandy_44 */
+/* Events from game_id = normandy_44 */
 [
   {
     "event_type": "chat",
     "username": "herr.eklund",
-    "time": 1612020645,
+    "time": 1612020776,
     "payload": {
       "username": "herr.eklund",
       "message": " --- LOADING SCENARIO: Cherbourg ---"
@@ -77,19 +78,6 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612018129,
-    "payload": {
-      "tray_component_id": "us-82-325",
-      "component_id": "zvkdqz43",
-      "game_board_id": "main_game_board",
-      "left": 2140,
-      "top": 151.33332443237305,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
     "time": 1612018122,
     "payload": {
       "tray_component_id": "us-82-508",
@@ -116,6 +104,19 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
+    "time": 1612018129,
+    "payload": {
+      "tray_component_id": "us-82-325",
+      "component_id": "zvkdqz43",
+      "game_board_id": "main_game_board",
+      "left": 2140,
+      "top": 151.33332443237305,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
     "time": 1612018169,
     "payload": {
       "tray_component_id": "us-101-502",
@@ -127,16 +128,11 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "create_component",
+    "event_type": "delete_component",
     "username": "-SETUP-",
-    "time": 1612018165,
+    "time": 1612018246,
     "payload": {
-      "tray_component_id": "us-101-501",
-      "component_id": "9zo36q2j",
-      "game_board_id": "main_game_board",
-      "left": 1575,
-      "top": 1366.333324432373,
-      "flipped": false
+      "component_id": "16otk0wp"
     }
   },
   {
@@ -153,11 +149,16 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "delete_component",
+    "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612018246,
+    "time": 1612018165,
     "payload": {
-      "component_id": "16otk0wp"
+      "tray_component_id": "us-101-501",
+      "component_id": "9zo36q2j",
+      "game_board_id": "main_game_board",
+      "left": 1575,
+      "top": 1366.333324432373,
+      "flipped": false
     }
   },
   {
@@ -210,14 +211,6 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "delete_component",
-    "username": "-SETUP-",
-    "time": 1612018259,
-    "payload": {
-      "component_id": "xbtkv48q"
-    }
-  },
-  {
     "event_type": "move_component",
     "username": "-SETUP-",
     "time": 1612018260,
@@ -226,6 +219,14 @@ var scenario_setup =
       "left": 2859,
       "top": 1306.3334159851074,
       "zIndex": "18"
+    }
+  },
+  {
+    "event_type": "delete_component",
+    "username": "-SETUP-",
+    "time": 1612018259,
+    "payload": {
+      "component_id": "xbtkv48q"
     }
   },
   {
@@ -256,14 +257,6 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "delete_component",
-    "username": "-SETUP-",
-    "time": 1612018263,
-    "payload": {
-      "component_id": "16otk0wp"
-    }
-  },
-  {
     "event_type": "move_component",
     "username": "-SETUP-",
     "time": 1612018261,
@@ -272,6 +265,14 @@ var scenario_setup =
       "left": 2880,
       "top": 1051.3334159851074,
       "zIndex": "19"
+    }
+  },
+  {
+    "event_type": "delete_component",
+    "username": "-SETUP-",
+    "time": 1612018263,
+    "payload": {
+      "component_id": "16otk0wp"
     }
   },
   {
@@ -288,23 +289,23 @@ var scenario_setup =
   {
     "event_type": "move_component",
     "username": "-SETUP-",
-    "time": 1612018268,
-    "payload": {
-      "component_id": "16otk0wp",
-      "left": 2387,
-      "top": 1220.3334159851074,
-      "zIndex": "22"
-    }
-  },
-  {
-    "event_type": "move_component",
-    "username": "-SETUP-",
     "time": 1612018263,
     "payload": {
       "component_id": "16otk0wp",
       "left": 2842,
       "top": 1329.3334159851074,
       "zIndex": "20"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "-SETUP-",
+    "time": 1612018268,
+    "payload": {
+      "component_id": "16otk0wp",
+      "left": 2387,
+      "top": 1220.3334159851074,
+      "zIndex": "22"
     }
   },
   {
@@ -321,12 +322,12 @@ var scenario_setup =
   {
     "event_type": "move_component",
     "username": "-SETUP-",
-    "time": 1612018270,
+    "time": 1612018391,
     "payload": {
-      "component_id": "16otk0wp",
-      "left": 2275,
-      "top": 1251.3334159851074,
-      "zIndex": "23"
+      "component_id": "bdyvyyba",
+      "left": 1794,
+      "top": 1234.3334159851074,
+      "zIndex": "25"
     }
   },
   {
@@ -340,12 +341,12 @@ var scenario_setup =
   {
     "event_type": "move_component",
     "username": "-SETUP-",
-    "time": 1612018391,
+    "time": 1612018270,
     "payload": {
-      "component_id": "bdyvyyba",
-      "left": 1794,
-      "top": 1234.3334159851074,
-      "zIndex": "25"
+      "component_id": "16otk0wp",
+      "left": 2275,
+      "top": 1251.3334159851074,
+      "zIndex": "23"
     }
   },
   {
@@ -383,6 +384,14 @@ var scenario_setup =
   {
     "event_type": "flip_component",
     "username": "-SETUP-",
+    "time": 1612018399,
+    "payload": {
+      "component_id": "48utywy7"
+    }
+  },
+  {
+    "event_type": "flip_component",
+    "username": "-SETUP-",
     "time": 1612018396,
     "payload": {
       "component_id": "a71xqfe4"
@@ -392,14 +401,6 @@ var scenario_setup =
     "event_type": "flip_component",
     "username": "-SETUP-",
     "time": 1612018398,
-    "payload": {
-      "component_id": "48utywy7"
-    }
-  },
-  {
-    "event_type": "flip_component",
-    "username": "-SETUP-",
-    "time": 1612018399,
     "payload": {
       "component_id": "48utywy7"
     }
@@ -429,14 +430,6 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "flip_component",
-    "username": "-SETUP-",
-    "time": 1612018410,
-    "payload": {
-      "component_id": "bdyvyyba"
-    }
-  },
-  {
     "event_type": "create_component",
     "username": "-SETUP-",
     "time": 1612018415,
@@ -447,6 +440,14 @@ var scenario_setup =
       "left": 2199,
       "top": 710.333324432373,
       "flipped": true
+    }
+  },
+  {
+    "event_type": "flip_component",
+    "username": "-SETUP-",
+    "time": 1612018410,
+    "payload": {
+      "component_id": "bdyvyyba"
     }
   },
   {
@@ -548,19 +549,6 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612018540,
-    "payload": {
-      "tray_component_id": "C_ge-sp-westeck",
-      "component_id": "ou8r9u4q",
-      "game_board_id": "main_game_board",
-      "left": 417.25,
-      "top": 199.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
     "time": 1612018536,
     "payload": {
       "tray_component_id": "C_ge-sp-york",
@@ -568,6 +556,19 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 662.25,
       "top": 205.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612018540,
+    "payload": {
+      "tray_component_id": "C_ge-sp-westeck",
+      "component_id": "ou8r9u4q",
+      "game_board_id": "main_game_board",
+      "left": 417.25,
+      "top": 199.24609375,
       "flipped": false
     }
   },
@@ -587,19 +588,6 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612018564,
-    "payload": {
-      "tray_component_id": "C_ge-sp-crisbeq",
-      "component_id": "z48qak0x",
-      "game_board_id": "main_game_board",
-      "left": 1838.25,
-      "top": 1051.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
     "time": 1612018542,
     "payload": {
       "tray_component_id": "C_ge-sp-osteck",
@@ -607,6 +595,19 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 1153.25,
       "top": 196.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612018564,
+    "payload": {
+      "tray_component_id": "C_ge-sp-crisbeq",
+      "component_id": "z48qak0x",
+      "game_board_id": "main_game_board",
+      "left": 1838.25,
+      "top": 1051.24609375,
       "flipped": false
     }
   },
@@ -641,25 +642,6 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "delete_component",
-    "username": "-SETUP-",
-    "time": 1612018578,
-    "payload": {
-      "component_id": "z48qak0x"
-    }
-  },
-  {
-    "event_type": "move_component",
-    "username": "-SETUP-",
-    "time": 1612018575,
-    "payload": {
-      "component_id": "z48qak0x",
-      "left": 2570.234375,
-      "top": 1155.21484375,
-      "zIndex": "19"
-    }
-  },
-  {
     "event_type": "create_component",
     "username": "-SETUP-",
     "time": 1612018664,
@@ -686,6 +668,17 @@ var scenario_setup =
     }
   },
   {
+    "event_type": "move_component",
+    "username": "-SETUP-",
+    "time": 1612018575,
+    "payload": {
+      "component_id": "z48qak0x",
+      "left": 2570.234375,
+      "top": 1155.21484375,
+      "zIndex": "19"
+    }
+  },
+  {
     "event_type": "create_component",
     "username": "-SETUP-",
     "time": 1612018651,
@@ -696,6 +689,14 @@ var scenario_setup =
       "left": 1581.25,
       "top": 943.24609375,
       "flipped": false
+    }
+  },
+  {
+    "event_type": "delete_component",
+    "username": "-SETUP-",
+    "time": 1612018578,
+    "payload": {
+      "component_id": "z48qak0x"
     }
   },
   {
@@ -738,6 +739,19 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
+    "time": 1612018798,
+    "payload": {
+      "tray_component_id": "C_ge-709-pzjg",
+      "component_id": "6jmmhig8",
+      "game_board_id": "main_game_board",
+      "left": 2085.25,
+      "top": 417.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
     "time": 1612018781,
     "payload": {
       "tray_component_id": "ge-709-729",
@@ -751,25 +765,14 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612018798,
+    "time": 1612018881,
     "payload": {
-      "tray_component_id": "C_ge-709-pzjg",
-      "component_id": "6jmmhig8",
+      "tray_component_id": "C_ge-709-649-ost",
+      "component_id": "bbpmrbwo",
       "game_board_id": "main_game_board",
-      "left": 2085.25,
-      "top": 417.24609375,
+      "left": 1025.25,
+      "top": 413.24609375,
       "flipped": false
-    }
-  },
-  {
-    "event_type": "move_component",
-    "username": "-SETUP-",
-    "time": 1612018783,
-    "payload": {
-      "component_id": "ae42x6eb",
-      "left": 1936.23046875,
-      "top": 699.21875,
-      "zIndex": "24"
     }
   },
   {
@@ -799,6 +802,17 @@ var scenario_setup =
     }
   },
   {
+    "event_type": "move_component",
+    "username": "-SETUP-",
+    "time": 1612018783,
+    "payload": {
+      "component_id": "ae42x6eb",
+      "left": 1936.23046875,
+      "top": 699.21875,
+      "zIndex": "24"
+    }
+  },
+  {
     "event_type": "create_component",
     "username": "-SETUP-",
     "time": 1612018839,
@@ -808,19 +822,6 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 1508.25,
       "top": 1261.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
-    "time": 1612018881,
-    "payload": {
-      "tray_component_id": "C_ge-709-649-ost",
-      "component_id": "bbpmrbwo",
-      "game_board_id": "main_game_board",
-      "left": 1025.25,
-      "top": 413.24609375,
       "flipped": false
     }
   },
@@ -866,19 +867,6 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612018931,
-    "payload": {
-      "tray_component_id": "ge-243-920",
-      "component_id": "347navah",
-      "game_board_id": "main_game_board",
-      "left": 86.25,
-      "top": 939.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
     "time": 1612018926,
     "payload": {
       "tray_component_id": "ge-243-922",
@@ -892,6 +880,19 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
+    "time": 1612018931,
+    "payload": {
+      "tray_component_id": "ge-243-920",
+      "component_id": "347navah",
+      "game_board_id": "main_game_board",
+      "left": 86.25,
+      "top": 939.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
     "time": 1612018920,
     "payload": {
       "tray_component_id": "C_ge-243-pzjr",
@@ -899,6 +900,19 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 89.25,
       "top": 1242.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019067,
+    "payload": {
+      "tray_component_id": "C_ge-91-1058-3",
+      "component_id": "qgal4ese",
+      "game_board_id": "main_game_board",
+      "left": 1516.25,
+      "top": 1464.24609375,
       "flipped": false
     }
   },
@@ -944,19 +958,6 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612019067,
-    "payload": {
-      "tray_component_id": "C_ge-91-1058-3",
-      "component_id": "qgal4ese",
-      "game_board_id": "main_game_board",
-      "left": 1516.25,
-      "top": 1464.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
     "time": 1612019055,
     "payload": {
       "tray_component_id": "C_ge-91-1057-3",
@@ -964,6 +965,19 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 1146.25,
       "top": 1046.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019151,
+    "payload": {
+      "tray_component_id": "C_ge-pzbn-100",
+      "component_id": "plybetpl",
+      "game_board_id": "main_game_board",
+      "left": 1208.25,
+      "top": 1575.24609375,
       "flipped": false
     }
   },
@@ -990,19 +1004,6 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 735.25,
       "top": 953.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
-    "time": 1612019151,
-    "payload": {
-      "tray_component_id": "C_ge-pzbn-100",
-      "component_id": "plybetpl",
-      "game_board_id": "main_game_board",
-      "left": 1208.25,
-      "top": 1575.24609375,
       "flipped": false
     }
   },
@@ -1046,14 +1047,6 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "delete_component",
-    "username": "-SETUP-",
-    "time": 1612019326,
-    "payload": {
-      "component_id": "4omugyhn"
-    }
-  },
-  {
     "event_type": "create_component",
     "username": "-SETUP-",
     "time": 1612019313,
@@ -1064,6 +1057,14 @@ var scenario_setup =
       "left": 914.25,
       "top": 240.24609375,
       "flipped": false
+    }
+  },
+  {
+    "event_type": "delete_component",
+    "username": "-SETUP-",
+    "time": 1612019326,
+    "payload": {
+      "component_id": "4omugyhn"
     }
   },
   {
@@ -1093,23 +1094,23 @@ var scenario_setup =
   {
     "event_type": "move_component",
     "username": "-SETUP-",
-    "time": 1612019326,
-    "payload": {
-      "component_id": "4omugyhn",
-      "left": 2599.23828125,
-      "top": 1091.2109375,
-      "zIndex": "46"
-    }
-  },
-  {
-    "event_type": "move_component",
-    "username": "-SETUP-",
     "time": 1612019331,
     "payload": {
       "component_id": "0tkh50yl",
       "left": 2612.2265625,
       "top": 1231.23046875,
       "zIndex": "48"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "-SETUP-",
+    "time": 1612019328,
+    "payload": {
+      "component_id": "4omugyhn",
+      "left": 2546.23046875,
+      "top": 1198.203125,
+      "zIndex": "47"
     }
   },
   {
@@ -1123,12 +1124,12 @@ var scenario_setup =
   {
     "event_type": "move_component",
     "username": "-SETUP-",
-    "time": 1612019328,
+    "time": 1612019326,
     "payload": {
       "component_id": "4omugyhn",
-      "left": 2546.23046875,
-      "top": 1198.203125,
-      "zIndex": "47"
+      "left": 2599.23828125,
+      "top": 1091.2109375,
+      "zIndex": "46"
     }
   },
   {
@@ -1153,23 +1154,23 @@ var scenario_setup =
   {
     "event_type": "move_component",
     "username": "-SETUP-",
-    "time": 1612019355,
-    "payload": {
-      "component_id": "jh8d2ijq",
-      "left": 1399.21875,
-      "top": 1079.23828125,
-      "zIndex": "50"
-    }
-  },
-  {
-    "event_type": "move_component",
-    "username": "-SETUP-",
     "time": 1612019357,
     "payload": {
       "component_id": "urpf7av9",
       "left": 1508.22265625,
       "top": 1052.2265625,
       "zIndex": "51"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "-SETUP-",
+    "time": 1612019355,
+    "payload": {
+      "component_id": "jh8d2ijq",
+      "left": 1399.21875,
+      "top": 1079.23828125,
+      "zIndex": "50"
     }
   },
   {
@@ -1192,6 +1193,19 @@ var scenario_setup =
     }
   },
   {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019381,
+    "payload": {
+      "tray_component_id": "ge-ftroule",
+      "component_id": "t995tqfq",
+      "game_board_id": "main_game_board",
+      "left": 780.25,
+      "top": 414.24609375,
+      "flipped": false
+    }
+  },
+  {
     "event_type": "move_component",
     "username": "-SETUP-",
     "time": 1612019360,
@@ -1200,17 +1214,6 @@ var scenario_setup =
       "left": 2652.20703125,
       "top": 1332.2265625,
       "zIndex": "52"
-    }
-  },
-  {
-    "event_type": "move_component",
-    "username": "-SETUP-",
-    "time": 1612019369,
-    "payload": {
-      "component_id": "cgjb6fos",
-      "left": 670.234375,
-      "top": 198.22265625,
-      "zIndex": "54"
     }
   },
   {
@@ -1233,16 +1236,14 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "create_component",
+    "event_type": "move_component",
     "username": "-SETUP-",
-    "time": 1612019381,
+    "time": 1612019369,
     "payload": {
-      "tray_component_id": "ge-ftroule",
-      "component_id": "t995tqfq",
-      "game_board_id": "main_game_board",
-      "left": 780.25,
-      "top": 414.24609375,
-      "flipped": false
+      "component_id": "cgjb6fos",
+      "left": 670.234375,
+      "top": 198.22265625,
+      "zIndex": "54"
     }
   },
   {
@@ -1254,6 +1255,32 @@ var scenario_setup =
       "left": 2732.2265625,
       "top": 1045.21484375,
       "zIndex": "56"
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019461,
+    "payload": {
+      "tray_component_id": "C_ge-chr-fortress",
+      "component_id": "sgfb41jq",
+      "game_board_id": "main_game_board",
+      "left": 795.25,
+      "top": 420.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019425,
+    "payload": {
+      "tray_component_id": "C_ge-sp-osteck",
+      "component_id": "prfkds65",
+      "game_board_id": "main_game_board",
+      "left": 1149.25,
+      "top": 195.24609375,
+      "flipped": false
     }
   },
   {
@@ -1277,32 +1304,6 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 475.25,
       "top": 301.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
-    "time": 1612019425,
-    "payload": {
-      "tray_component_id": "C_ge-sp-osteck",
-      "component_id": "prfkds65",
-      "game_board_id": "main_game_board",
-      "left": 1149.25,
-      "top": 195.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
-    "time": 1612019461,
-    "payload": {
-      "tray_component_id": "C_ge-chr-fortress",
-      "component_id": "sgfb41jq",
-      "game_board_id": "main_game_board",
-      "left": 795.25,
-      "top": 420.24609375,
       "flipped": false
     }
   },
@@ -1348,19 +1349,6 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612019556,
-    "payload": {
-      "tray_component_id": "ge-hq-cherbourg",
-      "component_id": "iw9sbpln",
-      "game_board_id": "main_game_board",
-      "left": 3003.25,
-      "top": 546.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
     "time": 1612019568,
     "payload": {
       "tray_component_id": "C_ge-repl-inf",
@@ -1368,6 +1356,19 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 2364.25,
       "top": 581.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019556,
+    "payload": {
+      "tray_component_id": "ge-hq-cherbourg",
+      "component_id": "iw9sbpln",
+      "game_board_id": "main_game_board",
+      "left": 3003.25,
+      "top": 546.24609375,
       "flipped": false
     }
   },
@@ -1387,13 +1388,13 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612019593,
+    "time": 1612019652,
     "payload": {
-      "tray_component_id": "C_ge-77-1050-3",
-      "component_id": "t1o3c87d",
+      "tray_component_id": "ge-77-1049",
+      "component_id": "sovapum4",
       "game_board_id": "main_game_board",
-      "left": 2419.25,
-      "top": 155.24609375,
+      "left": 2691.25,
+      "top": 129.24609375,
       "flipped": false
     }
   },
@@ -1406,6 +1407,19 @@ var scenario_setup =
       "left": 3010.234375,
       "top": 577.2265625,
       "zIndex": "54"
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019593,
+    "payload": {
+      "tray_component_id": "C_ge-77-1050-3",
+      "component_id": "t1o3c87d",
+      "game_board_id": "main_game_board",
+      "left": 2419.25,
+      "top": 155.24609375,
+      "flipped": false
     }
   },
   {
@@ -1422,19 +1436,6 @@ var scenario_setup =
   {
     "event_type": "create_component",
     "username": "-SETUP-",
-    "time": 1612019652,
-    "payload": {
-      "tray_component_id": "ge-77-1049",
-      "component_id": "sovapum4",
-      "game_board_id": "main_game_board",
-      "left": 2691.25,
-      "top": 129.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
     "time": 1612019665,
     "payload": {
       "tray_component_id": "C_ge-77-1050-2",
@@ -1442,6 +1443,19 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 2693.25,
       "top": 216.24609375,
+      "flipped": false
+    }
+  },
+  {
+    "event_type": "create_component",
+    "username": "-SETUP-",
+    "time": 1612019821,
+    "payload": {
+      "tray_component_id": "C_us-army-1st",
+      "component_id": "ecvqlcax",
+      "game_board_id": "main_game_board",
+      "left": 2273.25,
+      "top": 621.24609375,
       "flipped": false
     }
   },
@@ -1466,19 +1480,6 @@ var scenario_setup =
       "game_board_id": "main_game_board",
       "left": 2275.25,
       "top": 718.24609375,
-      "flipped": false
-    }
-  },
-  {
-    "event_type": "create_component",
-    "username": "-SETUP-",
-    "time": 1612019821,
-    "payload": {
-      "tray_component_id": "C_us-army-1st",
-      "component_id": "ecvqlcax",
-      "game_board_id": "main_game_board",
-      "left": 2273.25,
-      "top": 621.24609375,
       "flipped": false
     }
   },
@@ -1646,25 +1647,8 @@ var scenario_setup =
     }
   },
   {
-    "event_type": "chat",
-    "username": "herr.eklund",
-    "time": 1612020647,
-    "payload": {
-      "username": "herr.eklund",
-      "message": " --- SETUP COMPLETE ---"
-    }
-  },
-  {
     "event_type": "flip_component",
-    "username": "herr.eklund",
-    "time": 1612020658,
-    "payload": {
-      "component_id": "a71xqfe4"
-    }
-  },
-  {
-    "event_type": "flip_component",
-    "username": "herr.eklund",
+    "username": "-SETUP-",
     "time": 1612020659,
     "payload": {
       "component_id": "fw89eyfs"
@@ -1672,10 +1656,181 @@ var scenario_setup =
   },
   {
     "event_type": "flip_component",
-    "username": "herr.eklund",
+    "username": "-SETUP-",
+    "time": 1612020658,
+    "payload": {
+      "component_id": "a71xqfe4"
+    }
+  },
+  {
+    "event_type": "flip_component",
+    "username": "-SETUP-",
     "time": 1612020661,
     "payload": {
       "component_id": "6r0b5306"
+    }
+  },
+  {
+    "event_type": "chat",
+    "username": "herr.eklund",
+    "time": 1612020779,
+    "payload": {
+      "username": "herr.eklund",
+      "message": " --- SETUP COMPLETE ---"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020785,
+    "payload": {
+      "component_id": "ae42x6eb",
+      "left": 1781.229248046875,
+      "top": 418.20831298828125,
+      "zIndex": "10071"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020795,
+    "payload": {
+      "component_id": "ye4xr0g6",
+      "left": 2617.2501220703125,
+      "top": 518.2291870117188,
+      "zIndex": "10072"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020797,
+    "payload": {
+      "component_id": "iw9sbpln",
+      "left": 3015.2293701171875,
+      "top": 517.2083129882812,
+      "zIndex": "10073"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020800,
+    "payload": {
+      "component_id": "b7rbzdi1",
+      "left": 2366.2501220703125,
+      "top": 716.2291870117188,
+      "zIndex": "10074"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020803,
+    "payload": {
+      "component_id": "3lbuncpn",
+      "left": 1961.2501220703125,
+      "top": 933.2292022705078,
+      "zIndex": "10075"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020805,
+    "payload": {
+      "component_id": "dczwsgay",
+      "left": 2046.2501220703125,
+      "top": 934.2292022705078,
+      "zIndex": "10076"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020806,
+    "payload": {
+      "component_id": "7zi1egov",
+      "left": 1961.2501220703125,
+      "top": 1025.2292022705078,
+      "zIndex": "10077"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020807,
+    "payload": {
+      "component_id": "bmfpzrdk",
+      "left": 2130.2501220703125,
+      "top": 989.2292022705078,
+      "zIndex": "10078"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020809,
+    "payload": {
+      "component_id": "t3tadmzq",
+      "left": 2047.2501220703125,
+      "top": 1020.2292022705078,
+      "zIndex": "10079"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020810,
+    "payload": {
+      "component_id": "bmfpzrdk",
+      "left": 2131.2501220703125,
+      "top": 978.2292022705078,
+      "zIndex": "10080"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020816,
+    "payload": {
+      "component_id": "dczwsgay",
+      "left": 2041.2501220703125,
+      "top": 937.2292022705078,
+      "zIndex": "10081"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020818,
+    "payload": {
+      "component_id": "7zi1egov",
+      "left": 1962.2501220703125,
+      "top": 1014.2292022705078,
+      "zIndex": "10082"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020820,
+    "payload": {
+      "component_id": "t3tadmzq",
+      "left": 2041.2501220703125,
+      "top": 1013.2292022705078,
+      "zIndex": "10083"
+    }
+  },
+  {
+    "event_type": "move_component",
+    "username": "herr.eklund",
+    "time": 1612020821,
+    "payload": {
+      "component_id": "bmfpzrdk",
+      "left": 2108.2501220703125,
+      "top": 981.2292022705078,
+      "zIndex": "10084"
     }
   }
 ]
