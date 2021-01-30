@@ -523,7 +523,6 @@ function resetLineup() {
    // Empty lineup_box and show temp hidden
     $('.lineup_component').remove();
 
-    $('.hidden_component').draggable( 'enable' );
     $('.hidden_component').removeClass('hidden_component');
 
     $('.lineup_box').removeClass('lineup_box_active');
@@ -545,7 +544,7 @@ function selectedToLineup(component) {
 }
 
 function addCloneToLineupBox(component) {
-    var lineup_clone = component.clone(true);
+    var lineup_clone = component.clone(false);
     lineup_clone.css({position:'static'});
     lineup_clone.removeClass('selected_component');
     lineup_clone.addClass('lineup_component');
@@ -555,7 +554,7 @@ function addCloneToLineupBox(component) {
 
     lineup_clone.appendTo(closest_lineup_box);
 
-    lineup_clone.draggable();
+    //lineup_clone.draggable();
 
     // Hide original
     component.addClass('hidden_component');
