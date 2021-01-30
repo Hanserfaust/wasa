@@ -1,5 +1,5 @@
 /* Events from game_id = france_40 */
-var scenario_setup = /* Events from game_id = france_40 */
+var scenario_setup =
 [
   {
     "event_type": "create_component",

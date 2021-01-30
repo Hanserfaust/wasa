@@ -55,12 +55,17 @@
          *
          */
 
+
         $(document).ready( function() {
 
             nunjucks.configure('templates', {autoescape: true});
 
             /* Note, this is defined in script config.js */
-            createWasaBoardGame(wasa_api_hostname, wasa_api_port);
+            try {
+                createWasaBoardGame(wasa_api_hostname, wasa_api_port);
+            } catch (err) {
+                alert("Failed to create Wasa Board Game, reason was: " + err);
+            }
 
         });
 

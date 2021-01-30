@@ -85,5 +85,12 @@ var game_data = {
         'id': 'rules_tab',
         'link_src': 'http://www.gmtgames.com/normandy44/N44-RULES-2ndEdition.pdf',
         'link_title': 'Official rules by GMT (reprint version)'
-    }
+    },
+    'scenarios': [
+        {
+            'id':'cherbourg',
+            'title': 'Cherbourg',
+            'script': 'cherbourg.js'
+        }
+    ]
 };
